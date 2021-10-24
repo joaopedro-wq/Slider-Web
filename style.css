@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  --grey: hsl(240, 9%, 89%);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  background: url(imagem/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+h1 {
+  color: var(--grey);
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  width: 50vw;
+  background-color: black;
+  margin: 20vh auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px black;
+}
+
+.itens {
+  position: absolute;
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item {
+  height: 50vh;
+  width: 50vw;
+  transition: all 1s;
+}
+.item:first-child {
+  margin-left: -100%;
+}
+
+.item img {
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+.actionButton {
+  font: bold 30px sans-serif;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  color: #00000000;
+  user-select: none;
+}
+
+.actionButton:hover {
+  color: white;
+  background-color: #00000055;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@keyframes sacudir {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    t-webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.instagram {
+  background: #f18f1801;
+}
+.instagram:hover {
+  animation: sacudir 2.5s;
+}
+.facebook {
+  background: #f18f1801;
+}
+.facebook:hover {
+  animation: sacudir 2.5s;
+}
+.github {
+  background: #f18f1801;
+}
+.github:hover {
+  animation: sacudir 2.5s;
+}
+
+.linkedin {
+  background: #f18f1801;
+}
+.linkedin:hover {
+  animation: sacudir 2.5s;
+}
+
+.twitter {
+  background: #f18f1801;
+}
+.twitter:hover {
+  animation: sacudir 2.5s;
+}
